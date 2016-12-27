@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+  margin: 0; }
+
+.header {
+  height: 100vh;
+  z-index: 0; }
+
+.some {
+  width: 100%;
+  height: 100vh; }
+
+.some1 {
+  background-color: red; }
+
+.some2 {
+  background-color: blue; }
+
+.some3 {
+  background-color: transparent; }
+
+.some4 {
+  background-color: green; }
+
+/*MENU*/
+.mobileMenu {
+  display: none; }
+
+.brandLogo {
+  float: left;
+  margin-top: 10px;
+  transition-duration: 600ms;
+  transition-property: all; }
+
+.normal {
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  transition-duration: 600ms;
+  transition-property: all;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.6); }
+  .normal .bigMenu ul {
+    margin: 0;
+    float: right; }
+    .normal .bigMenu ul li {
+      display: inline-block;
+      width: 100px;
+      height: 50px;
+      line-height: 50px;
+      float: left;
+      list-style: none;
+      margin: 10px;
+      transition-duration: 600ms;
+      transition-property: all; }
+
+.small {
+  background-color: #646464; }
+  .small .brandLogo {
+    margin-top: 0;
+    height: 10px;
+    width: auto; }
+  .small .bigMenu ul li {
+    width: 80px;
+    height: 10px;
+    line-height: 10px; }
+
+/*hamburger*/
+@media (max-width: 480px) {
+  .mobileMenu {
+    display: block;
+    float: right; }
+  .dropdown-menu {
+    width: 100%;
+    text-align: center;
+    border-radius: 0; }
+  .bigMenu {
+    display: none; }
+  .brandLogo {
+    margin-top: 0; }
+  .c-hamburger {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    font-size: 0;
+    text-indent: -9999px;
+    appearance: none;
+    box-shadow: none;
+    border-radius: none;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s; }
+    .c-hamburger:focus {
+      outline: none; }
+    .c-hamburger span {
+      display: block;
+      position: absolute;
+      top: 23px;
+      left: 8px;
+      right: 8px;
+      height: 4px;
+      background: white; }
+    .c-hamburger span::before,
+    .c-hamburger span::after {
+      position: absolute;
+      display: block;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background-color: #fff;
+      content: ""; }
+    .c-hamburger span::before {
+      top: -10px; }
+    .c-hamburger span::after {
+      bottom: -10px; }
+  .c-hamburger--htx {
+    background-color: #ff3264; }
+    .c-hamburger--htx span {
+      transition: background 0s 0.3s; }
+    .c-hamburger--htx span::before,
+    .c-hamburger--htx span::after {
+      transition-duration: 0.3s, 0.3s;
+      transition-delay: 0.3s, 0s; }
+    .c-hamburger--htx span::before {
+      transition-property: top, transform; }
+    .c-hamburger--htx span::after {
+      transition-property: bottom, transform; }
+  /* active state, i.e. menu open */
+  .c-hamburger--htx.is-active {
+    background-color: #cb0032; }
+    .c-hamburger--htx.is-active span {
+      background: none; }
+    .c-hamburger--htx.is-active span::before {
+      top: 0;
+      transform: rotate(45deg); }
+    .c-hamburger--htx.is-active span::after {
+      bottom: 0;
+      transform: rotate(-45deg); }
+    .c-hamburger--htx.is-active span::before,
+    .c-hamburger--htx.is-active span::after {
+      transition-delay: 0s, 0.3s; } }
+
+/*CAROUSEL*/
+[class*="example"] {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+
+.example-1 {
+  background-image: url("https://static.pexels.com/photos/70234/pexels-photo-70234-medium.jpeg"); }
+
+.example-2 {
+  background-image: url("https://static.pexels.com/photos/4022/cold-snow-forest-trees-medium.jpeg"); }
+
+.example-3 {
+  background-image: url("https://static.pexels.com/photos/24314/pexels-photo-24314-medium.jpg"); }
+
+.example-4 {
+  background-image: url("https://static.pexels.com/photos/6626/pexels-photo-medium.jpeg"); }
+
+.example-5 {
+  background-image: url("https://static.pexels.com/photos/6993/snow-winter-christmas-deer-medium.jpg"); }
+
+.owl-dots {
+  position: absolute;
+  left: calc(50% - 60px);
+  bottom: 20px; }
+
+/*# sourceMappingURL=style.css.map */
