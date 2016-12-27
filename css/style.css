@@ -39,7 +39,7 @@
   transition-duration: 600ms;
   transition-property: all;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.6); }
+  background-color: rgba(255, 255, 255, 0.8); }
   .normal .bigMenu ul {
     margin: 0;
     float: right; }
@@ -152,19 +152,19 @@
   background-size: cover; }
 
 .example-1 {
-  background-image: url("https://static.pexels.com/photos/70234/pexels-photo-70234-medium.jpeg"); }
+  background-image: url("https://static.pexels.com/photos/50665/pexels-photo-50665.jpeg"); }
 
 .example-2 {
-  background-image: url("https://static.pexels.com/photos/4022/cold-snow-forest-trees-medium.jpeg"); }
+  background-image: url("https://static.pexels.com/photos/132539/pexels-photo-132539.jpeg"); }
 
 .example-3 {
-  background-image: url("https://static.pexels.com/photos/24314/pexels-photo-24314-medium.jpg"); }
+  background-image: url("https://static.pexels.com/photos/103290/pexels-photo-103290.jpeg"); }
 
 .example-4 {
-  background-image: url("https://static.pexels.com/photos/6626/pexels-photo-medium.jpeg"); }
+  background-image: url("https://static.pexels.com/photos/35624/auto-car-cadillac-oldtimer.jpg"); }
 
 .example-5 {
-  background-image: url("https://static.pexels.com/photos/6993/snow-winter-christmas-deer-medium.jpg"); }
+  background-image: url("https://static.pexels.com/photos/42425/pexels-photo-42425.jpeg"); }
 
 .owl-dots {
   position: absolute;
