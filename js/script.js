@@ -32,7 +32,7 @@ $(function() {
       e.preventDefault();
       (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
     });
-  }
+  };
 
 });
 
@@ -43,4 +43,16 @@ $(function(){
     margin: 0,
     autoplay: true
   });
+});
+
+$(function() { 
+	$('a[href^="#"]').on('click', function(event) {
+		var target = $( $(this).attr('href') );
+		if( target.length ) {
+			event.preventDefault();
+			$('html, body').animate({
+			scrollTop: target.offset().top
+			}, 1000);
+		}
+	});
 });
